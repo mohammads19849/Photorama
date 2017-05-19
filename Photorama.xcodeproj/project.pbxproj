@@ -15,6 +15,8 @@
 		1858E0BB1ECF1D600013F61A /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858E0BA1ECF1D600013F61A /* PhotoramaTests.swift */; };
 		1858E0C61ECF1D600013F61A /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858E0C51ECF1D600013F61A /* PhotoramaUITests.swift */; };
 		1858E0D41ECF1EB80013F61A /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858E0D31ECF1EB80013F61A /* PhotoViewController.swift */; };
+		1858E0D61ECF28460013F61A /* FilckerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858E0D51ECF28460013F61A /* FilckerAPI.swift */; };
+		1858E0D81ECF57980013F61A /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858E0D71ECF57980013F61A /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1858E0C51ECF1D600013F61A /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
 		1858E0C71ECF1D600013F61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1858E0D31ECF1EB80013F61A /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		1858E0D51ECF28460013F61A /* FilckerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilckerAPI.swift; sourceTree = "<group>"; };
+		1858E0D71ECF57980013F61A /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoStore.swift; path = ../PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		1858E0A41ECF1D600013F61A /* Photorama */ = {
 			isa = PBXGroup;
 			children = (
+				1858E0DA1ECF57B40013F61A /* View */,
+				1858E0DB1ECF57C10013F61A /* Controller */,
+				1858E0D91ECF57A70013F61A /* Model */,
 				1858E0A51ECF1D600013F61A /* AppDelegate.swift */,
-				1858E0A71ECF1D600013F61A /* ViewController.swift */,
-				1858E0D31ECF1EB80013F61A /* PhotoViewController.swift */,
 				1858E0A91ECF1D600013F61A /* Main.storyboard */,
 				1858E0AC1ECF1D600013F61A /* Assets.xcassets */,
 				1858E0AE1ECF1D600013F61A /* LaunchScreen.storyboard */,
@@ -126,6 +131,31 @@
 				1858E0C71ECF1D600013F61A /* Info.plist */,
 			);
 			path = PhotoramaUITests;
+			sourceTree = "<group>";
+		};
+		1858E0D91ECF57A70013F61A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1858E0D51ECF28460013F61A /* FilckerAPI.swift */,
+				1858E0D71ECF57980013F61A /* PhotoStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1858E0DA1ECF57B40013F61A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1858E0D31ECF1EB80013F61A /* PhotoViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1858E0DB1ECF57C10013F61A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1858E0A71ECF1D600013F61A /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1858E0D81ECF57980013F61A /* PhotoStore.swift in Sources */,
 				1858E0A81ECF1D600013F61A /* ViewController.swift in Sources */,
+				1858E0D61ECF28460013F61A /* FilckerAPI.swift in Sources */,
 				1858E0A61ECF1D600013F61A /* AppDelegate.swift in Sources */,
 				1858E0D41ECF1EB80013F61A /* PhotoViewController.swift in Sources */,
 			);
